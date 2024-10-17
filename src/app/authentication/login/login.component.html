@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-header>
+    <h2>SISAR</h2>
+  </mat-card-header>
+  <mat-card-content>
+    <form #loginForm="ngForm" (submit)="login()">
+      <h4 class="card-title">Login</h4>
+      <mat-error *ngIf="!loginValid">
+        Credenziali inserite non corrette!.
+      </mat-error>
+      <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Username" [(ngModel)]="user" name="username" required>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Password" [(ngModel)]="password" name="password"
+               required>
+      </mat-form-field>
+      <button mat-raised-button color="primary" [disabled]="!loginForm.form.valid">Login</button>
+    </form>
+  </mat-card-content>
+</mat-card>

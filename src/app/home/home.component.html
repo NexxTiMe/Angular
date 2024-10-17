@@ -1,0 +1,13 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened class="drawer">
+    <a *ngFor="let application of applications" [href]="application.url">
+      <app-application [appName]="application.name" class="card"></app-application>
+    </a>
+  </mat-drawer>
+  <mat-drawer-content class="container">
+    <div class="container1">
+      Dashboard scelta applicazioni
+    </div>
+    <button mat-raised-button color="red" class="logout" (click)="logout()">Logout</button>
+  </mat-drawer-content>
+</mat-drawer-container>

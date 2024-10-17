@@ -1,0 +1,38 @@
+.example-container {
+  //width: auto;
+  height: 100%;
+  border: 1px solid #555;
+  background: royalblue;
+  display: flex;
+}
+
+.drawer{
+  display: flex;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.container1{
+  display: flex;
+  height: 100%;
+  flex: auto;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.logout{
+  margin: 1em 1em 1em auto;
+}
+
+.drawer {
+  background: dodgerblue;
+}
+
+.mat-mdc-raised-button.mat-red{
+  background-color: red;
+  color: white;
+}
